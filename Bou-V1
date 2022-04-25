@@ -630,10 +630,8 @@ local function BouV1ForJoining()
 	local function UDJVA_fake_script() -- MainFrame.Main 
 		local script = Instance.new('LocalScript', MainFrame)
 
-		if not game:IsLoaded() then
-			game.Loaded:Wait()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/Kunai7685/Bou-V1/main/Bou-V1'))()
-		end
+		wait(5)
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Kunai7685/Bou-V1/main/Bou-V1'))()
 
 	end
 	coroutine.wrap(UDJVA_fake_script)()

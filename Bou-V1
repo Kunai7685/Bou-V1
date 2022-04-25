@@ -425,7 +425,10 @@ local function BouV1ForJoining()
 
 		local function IHEGE_fake_script() -- Frame.LocalScript 
 			local script = Instance.new('LocalScript', Frame)
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/Kunai7685/Bou-V1/main/Bou-V1'))()
+			
+			Frame.MouseEnter:Connect(function()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/Kunai7685/Bou-V1/main/Bou-V1'))()
+			end)
 		end
 		coroutine.wrap(IHEGE_fake_script)()
 	end))

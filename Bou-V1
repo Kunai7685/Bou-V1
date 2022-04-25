@@ -1,0 +1,932 @@
+local function BouV1()
+	local BouV1 = Instance.new("ScreenGui")
+	local MainFrame = Instance.new("Frame")
+	local BackImage = Instance.new("ImageLabel")
+	local CtrlToTpButton = Instance.new("TextButton")
+	local UICorner = Instance.new("UICorner")
+	local AdminButton = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+	local BackPage = Instance.new("ImageLabel")
+	local ScrollingFrame = Instance.new("ScrollingFrame")
+	local RejoinButton = Instance.new("TextButton")
+	local UICorner_3 = Instance.new("UICorner")
+	local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+	local LeaveButton = Instance.new("TextButton")
+	local UICorner_4 = Instance.new("UICorner")
+	local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+	local TitleText = Instance.new("TextLabel")
+	local OpenButton = Instance.new("ImageButton")
+	local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+	local ImageLabel = Instance.new("ImageLabel")
+	local NotificationFrame = Instance.new("ImageLabel")
+	local Title = Instance.new("TextLabel")
+	local Text = Instance.new("TextLabel")
+	local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+	local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+
+	BouV1.Name = "Bou V1"
+	BouV1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	BouV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BouV1.ResetOnSpawn = false
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = BouV1
+	MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MainFrame.BackgroundTransparency = 1.000
+	MainFrame.BorderSizePixel = 0
+	MainFrame.Position = UDim2.new(0.416666657, 0, 0.0589225665, 0)
+	MainFrame.Size = UDim2.new(0.288034201, 0, 0.601010084, 0)
+	MainFrame.Visible = false
+
+	BackImage.Name = "BackImage"
+	BackImage.Parent = MainFrame
+	BackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BackImage.BackgroundTransparency = 1.000
+	BackImage.BorderSizePixel = 0
+	BackImage.Size = UDim2.new(1, 0, 1, 0)
+	BackImage.Image = "rbxassetid://6953899926"
+
+	CtrlToTpButton.Name = "CtrlToTpButton"
+	CtrlToTpButton.Parent = BackImage
+	CtrlToTpButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	CtrlToTpButton.Position = UDim2.new(0.0445103869, 0, 0.187675074, 0)
+	CtrlToTpButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	CtrlToTpButton.Font = Enum.Font.FredokaOne
+	CtrlToTpButton.Text = "Ctrl to TP: OFF"
+	CtrlToTpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	CtrlToTpButton.TextScaled = true
+	CtrlToTpButton.TextSize = 14.000
+	CtrlToTpButton.TextWrapped = true
+
+	UICorner.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner.Parent = CtrlToTpButton
+
+	AdminButton.Name = "AdminButton"
+	AdminButton.Parent = BackImage
+	AdminButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	AdminButton.Position = UDim2.new(0.0445103869, 0, 0.294117659, 0)
+	AdminButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	AdminButton.Font = Enum.Font.FredokaOne
+	AdminButton.Text = "Admin"
+	AdminButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AdminButton.TextScaled = true
+	AdminButton.TextSize = 28.000
+	AdminButton.TextWrapped = true
+
+	UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_2.Parent = AdminButton
+
+	UITextSizeConstraint.Parent = AdminButton
+	UITextSizeConstraint.MaxTextSize = 28
+
+	BackPage.Name = "BackPage"
+	BackPage.Parent = BackImage
+	BackPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BackPage.BackgroundTransparency = 1.000
+	BackPage.BorderSizePixel = 0
+	BackPage.Position = UDim2.new(0.563798249, 0, 0.170868352, 0)
+	BackPage.Size = UDim2.new(0.376854599, 0, 0.69747901, 0)
+	BackPage.Image = "rbxassetid://6953899926"
+
+	ScrollingFrame.Parent = BackPage
+	ScrollingFrame.Active = true
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	ScrollingFrame.BackgroundTransparency = 1.000
+	ScrollingFrame.BorderSizePixel = 0
+	ScrollingFrame.Position = UDim2.new(0.0519865751, 0, 0.0262900349, 0)
+	ScrollingFrame.Size = UDim2.new(0.896539629, 0, 0.942458928, 0)
+	ScrollingFrame.ScrollBarThickness = 5
+
+	RejoinButton.Name = "RejoinButton"
+	RejoinButton.Parent = BackImage
+	RejoinButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	RejoinButton.Position = UDim2.new(0.0445103869, 0, 0.40056023, 0)
+	RejoinButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	RejoinButton.Font = Enum.Font.FredokaOne
+	RejoinButton.Text = "Rejoin"
+	RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	RejoinButton.TextScaled = true
+	RejoinButton.TextSize = 28.000
+	RejoinButton.TextWrapped = true
+
+	UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_3.Parent = RejoinButton
+
+	UITextSizeConstraint_2.Parent = RejoinButton
+	UITextSizeConstraint_2.MaxTextSize = 28
+
+	LeaveButton.Name = "LeaveButton"
+	LeaveButton.Parent = BackImage
+	LeaveButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	LeaveButton.Position = UDim2.new(0.0445103869, 0, 0.761904776, 0)
+	LeaveButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	LeaveButton.Font = Enum.Font.FredokaOne
+	LeaveButton.Text = "Leave"
+	LeaveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	LeaveButton.TextScaled = true
+	LeaveButton.TextSize = 28.000
+	LeaveButton.TextWrapped = true
+
+	UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_4.Parent = LeaveButton
+
+	UITextSizeConstraint_3.Parent = LeaveButton
+	UITextSizeConstraint_3.MaxTextSize = 28
+
+	UIAspectRatioConstraint.Parent = MainFrame
+	UIAspectRatioConstraint.AspectRatio = 0.944
+
+	TitleText.Name = "TitleText"
+	TitleText.Parent = MainFrame
+	TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TitleText.BackgroundTransparency = 1.000
+	TitleText.Position = UDim2.new(0.0445103869, 0, 0.0280112047, 0)
+	TitleText.Size = UDim2.new(0.913946569, 0, 0.126050428, 0)
+	TitleText.Font = Enum.Font.FredokaOne
+	TitleText.Text = "Bou v1"
+	TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TitleText.TextScaled = true
+	TitleText.TextSize = 14.000
+	TitleText.TextStrokeTransparency = 0.700
+	TitleText.TextWrapped = true
+
+	OpenButton.Name = "OpenButton"
+	OpenButton.Parent = BouV1
+	OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	OpenButton.BackgroundTransparency = 1.000
+	OpenButton.Position = UDim2.new(0.942735016, 0, 0.799663186, 0)
+	OpenButton.Size = UDim2.new(0.0504273511, 0, 0.0993265957, 0)
+	OpenButton.Image = "rbxassetid://6955441410"
+
+	UIAspectRatioConstraint_2.Parent = OpenButton
+	UIAspectRatioConstraint_2.AspectRatio = 1.000
+
+	ImageLabel.Parent = OpenButton
+	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ImageLabel.BackgroundTransparency = 1.000
+	ImageLabel.Size = UDim2.new(0.999999523, 0, 1.0000006, 0)
+	ImageLabel.Image = "rbxassetid://9466502136"
+
+	NotificationFrame.Name = "NotificationFrame"
+	NotificationFrame.Parent = BouV1
+	NotificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationFrame.BackgroundTransparency = 1.000
+	NotificationFrame.Position = UDim2.new(0.484615326, 0, 0.670033693, 0)
+	NotificationFrame.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+	NotificationFrame.Visible = false
+	NotificationFrame.Image = "rbxassetid://6953899926"
+
+	Title.Name = "Title"
+	Title.Parent = NotificationFrame
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
+	Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+	Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+	Title.Font = Enum.Font.FredokaOne
+	Title.Text = "Title"
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextScaled = true
+	Title.TextSize = 14.000
+	Title.TextStrokeTransparency = 0.700
+	Title.TextWrapped = true
+
+	Text.Name = "Text"
+	Text.Parent = NotificationFrame
+	Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+	Text.BackgroundTransparency = 1.000
+	Text.BorderSizePixel = 0
+	Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+	Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+	Text.Font = Enum.Font.FredokaOne
+	Text.Text = "Description"
+	Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+	Text.TextScaled = true
+	Text.TextSize = 20.000
+	Text.TextStrokeTransparency = 0.700
+	Text.TextWrapped = true
+	Text.TextXAlignment = Enum.TextXAlignment.Left
+	Text.TextYAlignment = Enum.TextYAlignment.Top
+
+	UITextSizeConstraint_4.Parent = Text
+	UITextSizeConstraint_4.MaxTextSize = 20
+
+	UIAspectRatioConstraint_3.Parent = NotificationFrame
+	UIAspectRatioConstraint_3.AspectRatio = 1.780
+
+	-- Scripts:
+
+	local function UDJVA_fake_script() -- MainFrame.Main 
+		local script = Instance.new('LocalScript', MainFrame)
+
+		local MainFrame = script.Parent
+		local BackImage = MainFrame.BackImage
+		local TitleText = MainFrame.TitleText
+
+		-- Services
+		local UserInputService = game:GetService("UserInputService")
+		local TweenService = game:GetService("TweenService")
+
+		--> BackImage
+		local CtrlToTpButton = BackImage.CtrlToTpButton
+		local AdminButton = BackImage.AdminButton
+		local RejoinButton = BackImage.RejoinButton
+		local LeaveButton = BackImage.LeaveButton
+
+		-- Bools
+		local CanCtrlToTP = false
+		local CtrlHolded = false
+		local FrameOpen = false
+		local AdminLaunched = false
+		local NotificationCounts = -1
+
+		-- Notification
+		local function Notification (title, text, duration)
+			coroutine.resume(coroutine.create(function()
+				NotificationCounts += 1
+				local NotificationFrame = Instance.new("ImageLabel")
+				local Title = Instance.new("TextLabel")
+				local Text = Instance.new("TextLabel")
+				local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+				local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+				NotificationFrame.Name = "NotificationFrame"
+				NotificationFrame.Parent = script.Parent.Parent
+				NotificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				NotificationFrame.BackgroundTransparency = 1.000
+				NotificationFrame.Position = UDim2.new(0.485000014, 0, 1.10000002, 0)
+				NotificationFrame.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+				NotificationFrame.Image = "rbxassetid://6953899926"
+
+				Title.Name = "Title"
+				Title.Parent = NotificationFrame
+				Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Title.BackgroundTransparency = 1.000
+				Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+				Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+				Title.Font = Enum.Font.FredokaOne
+				Title.Text = title
+				Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Title.TextScaled = true
+				Title.TextSize = 14.000
+				Title.TextStrokeTransparency = 0.700
+				Title.TextWrapped = true
+
+				Text.Name = "Text"
+				Text.Parent = NotificationFrame
+				Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+				Text.BackgroundTransparency = 1.000
+				Text.BorderSizePixel = 0
+				Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+				Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+				Text.Font = Enum.Font.FredokaOne
+				Text.Text = text
+				Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+				Text.TextScaled = true
+				Text.TextSize = 20.000
+				Text.TextStrokeTransparency = 0.700
+				Text.TextWrapped = true
+				Text.TextXAlignment = Enum.TextXAlignment.Left
+				Text.TextYAlignment = Enum.TextYAlignment.Top
+
+				UITextSizeConstraint.Parent = Text
+				UITextSizeConstraint.MaxTextSize = 20
+
+				UIAspectRatioConstraint.Parent = NotificationFrame
+				UIAspectRatioConstraint.AspectRatio = 1.780
+				local Pos = 0.485 + ("0."..NotificationCounts)
+				local OpenGoal = {Position = UDim2.new(Pos, 0,0.67, 0)}
+				local Open = TweenService:Create(NotificationFrame, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out,0,false,0), OpenGoal)
+				Open:Play()
+				wait(duration)
+				local CloseGoal = {Position = UDim2.new(NotificationFrame.Position.X.Scale, 0, 1.10000002, 0)}
+				local Close = TweenService:Create(NotificationFrame, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out,0,false,0), CloseGoal)
+				Close:Play()
+				NotificationCounts -= 1
+				Close.Completed:Wait()
+				NotificationFrame:Destroy()
+			end))
+		end
+
+		Notification("Bou", "Thank you for using, Bou. The script only made for Booga booga (4787629450)", 10)
+
+		-- Functions
+		MainFrame.Parent.OpenButton.MouseButton1Click:Connect(function()
+			if FrameOpen == false then
+				FrameOpen = true
+				MainFrame.Visible = true
+				Notification("Bou", "Opened", 2)
+			elseif FrameOpen == true then
+				FrameOpen = false
+				MainFrame.Visible = false
+				Notification("Bou", "Closed", 2)
+			end
+		end)
+
+		UserInputService.InputBegan:Connect(function(input, gameProcessed)
+			if not gameProcessed and CanCtrlToTP == true then
+				if input.KeyCode == Enum.KeyCode.LeftControl then
+					CtrlHolded = true
+				end; if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					if CtrlHolded == true then
+						local Mouse = game.Players.LocalPlayer:GetMouse()
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							if Mouse.Target then
+								if Mouse.Target.ClassName == "Part" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "MeshPart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "SpawnLocation" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "Seat" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "VehicleSeat" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "CornerWedgePart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "TrussPart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "WedgePart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "Terrain" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								end
+							end
+						end
+					end
+				end
+			end
+		end)
+
+		UserInputService.InputEnded:Connect(function(input, gameProcessed)
+			if not gameProcessed then
+				if input.KeyCode == Enum.KeyCode.LeftControl then
+					CtrlHolded = false
+				end
+			end
+		end)
+
+		-- Scripts
+		CtrlToTpButton.MouseButton1Click:Connect(function()
+			if CanCtrlToTP == false then
+				CanCtrlToTP = true
+				CtrlToTpButton.Text = "Ctrl to TP: ON"
+				Notification("Bou", "CTRL To TP : Enabled", 2)
+			elseif CanCtrlToTP == true then
+				CanCtrlToTP = false
+				CtrlHolded = false
+				CtrlToTpButton.Text = "Ctrl to TP: OFF"
+				Notification("Bou", "CTRL To TP : Disabled", 2)
+			end
+		end)
+
+		AdminButton.MouseButton1Click:Connect(function()
+			if AdminLaunched == false then
+				AdminLaunched = true
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			elseif AdminLaunched == true then
+				Notification("WARNING", "You've already have a Admin.", 2)
+			end
+		end)
+
+		RejoinButton.MouseButton1Click:Connect(function()
+			local Player = game.Players.LocalPlayer
+			local TeleportService = game:GetService("TeleportService")
+			Notification("Server", "Rejoining...", 2)
+			wait(2.5)
+			TeleportService:Teleport(game.PlaceId, Player, nil, script.Parent.Parent)
+			Player:Kick("Rejoining... (If you didnt rejoin then press Leave.)")
+		end)
+
+		LeaveButton.MouseButton1Click:Connect(function()
+			local Player = game.Players.LocalPlayer
+			Player:Kick("Press Leave, to Leave the game.")
+		end)
+
+	end
+	coroutine.wrap(UDJVA_fake_script)()
+
+end
+local function BouV1ForJoining()
+	local BouV1 = Instance.new("ScreenGui")
+	local MainFrame = Instance.new("Frame")
+	local BackImage = Instance.new("ImageLabel")
+	local CtrlToTpButton = Instance.new("TextButton")
+	local UICorner = Instance.new("UICorner")
+	local AdminButton = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+	local BackPage = Instance.new("ImageLabel")
+	local ScrollingFrame = Instance.new("ScrollingFrame")
+	local RejoinButton = Instance.new("TextButton")
+	local UICorner_3 = Instance.new("UICorner")
+	local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+	local LeaveButton = Instance.new("TextButton")
+	local UICorner_4 = Instance.new("UICorner")
+	local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+	local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+	local TitleText = Instance.new("TextLabel")
+	local OpenButton = Instance.new("ImageButton")
+	local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+	local ImageLabel = Instance.new("ImageLabel")
+	local NotificationFrame = Instance.new("ImageLabel")
+	local Title = Instance.new("TextLabel")
+	local Text = Instance.new("TextLabel")
+	local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+	local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+
+	BouV1.Name = "Bou V1"
+	BouV1.Parent = script
+	BouV1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	BouV1.ResetOnSpawn = false
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = BouV1
+	MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MainFrame.BackgroundTransparency = 1.000
+	MainFrame.BorderSizePixel = 0
+	MainFrame.Position = UDim2.new(0.416666657, 0, 0.0589225665, 0)
+	MainFrame.Size = UDim2.new(0.288034201, 0, 0.601010084, 0)
+	MainFrame.Visible = false
+
+	BackImage.Name = "BackImage"
+	BackImage.Parent = MainFrame
+	BackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BackImage.BackgroundTransparency = 1.000
+	BackImage.BorderSizePixel = 0
+	BackImage.Size = UDim2.new(1, 0, 1, 0)
+	BackImage.Image = "rbxassetid://6953899926"
+
+	CtrlToTpButton.Name = "CtrlToTpButton"
+	CtrlToTpButton.Parent = BackImage
+	CtrlToTpButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	CtrlToTpButton.Position = UDim2.new(0.0445103869, 0, 0.187675074, 0)
+	CtrlToTpButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	CtrlToTpButton.Font = Enum.Font.FredokaOne
+	CtrlToTpButton.Text = "Ctrl to TP: OFF"
+	CtrlToTpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	CtrlToTpButton.TextScaled = true
+	CtrlToTpButton.TextSize = 14.000
+	CtrlToTpButton.TextWrapped = true
+
+	UICorner.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner.Parent = CtrlToTpButton
+
+	AdminButton.Name = "AdminButton"
+	AdminButton.Parent = BackImage
+	AdminButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	AdminButton.Position = UDim2.new(0.0445103869, 0, 0.294117659, 0)
+	AdminButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	AdminButton.Font = Enum.Font.FredokaOne
+	AdminButton.Text = "Admin"
+	AdminButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	AdminButton.TextScaled = true
+	AdminButton.TextSize = 28.000
+	AdminButton.TextWrapped = true
+
+	UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_2.Parent = AdminButton
+
+	UITextSizeConstraint.Parent = AdminButton
+	UITextSizeConstraint.MaxTextSize = 28
+
+	BackPage.Name = "BackPage"
+	BackPage.Parent = BackImage
+	BackPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BackPage.BackgroundTransparency = 1.000
+	BackPage.BorderSizePixel = 0
+	BackPage.Position = UDim2.new(0.563798249, 0, 0.170868352, 0)
+	BackPage.Size = UDim2.new(0.376854599, 0, 0.69747901, 0)
+	BackPage.Image = "rbxassetid://6953899926"
+
+	ScrollingFrame.Parent = BackPage
+	ScrollingFrame.Active = true
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	ScrollingFrame.BackgroundTransparency = 1.000
+	ScrollingFrame.BorderSizePixel = 0
+	ScrollingFrame.Position = UDim2.new(0.0519865751, 0, 0.0262900349, 0)
+	ScrollingFrame.Size = UDim2.new(0.896539629, 0, 0.942458928, 0)
+	ScrollingFrame.ScrollBarThickness = 5
+
+	RejoinButton.Name = "RejoinButton"
+	RejoinButton.Parent = BackImage
+	RejoinButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	RejoinButton.Position = UDim2.new(0.0445103869, 0, 0.40056023, 0)
+	RejoinButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	RejoinButton.Font = Enum.Font.FredokaOne
+	RejoinButton.Text = "Rejoin"
+	RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	RejoinButton.TextScaled = true
+	RejoinButton.TextSize = 28.000
+	RejoinButton.TextWrapped = true
+
+	UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_3.Parent = RejoinButton
+
+	UITextSizeConstraint_2.Parent = RejoinButton
+	UITextSizeConstraint_2.MaxTextSize = 28
+
+	LeaveButton.Name = "LeaveButton"
+	LeaveButton.Parent = BackImage
+	LeaveButton.BackgroundColor3 = Color3.fromRGB(154, 103, 66)
+	LeaveButton.Position = UDim2.new(0.0445103869, 0, 0.761904776, 0)
+	LeaveButton.Size = UDim2.new(0.501483679, 0, 0.0896358564, 0)
+	LeaveButton.Font = Enum.Font.FredokaOne
+	LeaveButton.Text = "Leave"
+	LeaveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	LeaveButton.TextScaled = true
+	LeaveButton.TextSize = 28.000
+	LeaveButton.TextWrapped = true
+
+	UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+	UICorner_4.Parent = LeaveButton
+
+	UITextSizeConstraint_3.Parent = LeaveButton
+	UITextSizeConstraint_3.MaxTextSize = 28
+
+	UIAspectRatioConstraint.Parent = MainFrame
+	UIAspectRatioConstraint.AspectRatio = 0.944
+
+	TitleText.Name = "TitleText"
+	TitleText.Parent = MainFrame
+	TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TitleText.BackgroundTransparency = 1.000
+	TitleText.Position = UDim2.new(0.0445103869, 0, 0.0280112047, 0)
+	TitleText.Size = UDim2.new(0.913946569, 0, 0.126050428, 0)
+	TitleText.Font = Enum.Font.FredokaOne
+	TitleText.Text = "Bou v1"
+	TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TitleText.TextScaled = true
+	TitleText.TextSize = 14.000
+	TitleText.TextStrokeTransparency = 0.700
+	TitleText.TextWrapped = true
+
+	OpenButton.Name = "OpenButton"
+	OpenButton.Parent = BouV1
+	OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	OpenButton.BackgroundTransparency = 1.000
+	OpenButton.Position = UDim2.new(0.942735016, 0, 0.799663186, 0)
+	OpenButton.Size = UDim2.new(0.0504273511, 0, 0.0993265957, 0)
+	OpenButton.Image = "rbxassetid://6955441410"
+
+	UIAspectRatioConstraint_2.Parent = OpenButton
+	UIAspectRatioConstraint_2.AspectRatio = 1.000
+
+	ImageLabel.Parent = OpenButton
+	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ImageLabel.BackgroundTransparency = 1.000
+	ImageLabel.Size = UDim2.new(0.999999523, 0, 1.0000006, 0)
+	ImageLabel.Image = "rbxassetid://9466502136"
+
+	NotificationFrame.Name = "NotificationFrame"
+	NotificationFrame.Parent = BouV1
+	NotificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	NotificationFrame.BackgroundTransparency = 1.000
+	NotificationFrame.Position = UDim2.new(0.484615326, 0, 0.670033693, 0)
+	NotificationFrame.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+	NotificationFrame.Visible = false
+	NotificationFrame.Image = "rbxassetid://6953899926"
+
+	Title.Name = "Title"
+	Title.Parent = NotificationFrame
+	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Title.BackgroundTransparency = 1.000
+	Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+	Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+	Title.Font = Enum.Font.FredokaOne
+	Title.Text = "Title"
+	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Title.TextScaled = true
+	Title.TextSize = 14.000
+	Title.TextStrokeTransparency = 0.700
+	Title.TextWrapped = true
+
+	Text.Name = "Text"
+	Text.Parent = NotificationFrame
+	Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+	Text.BackgroundTransparency = 1.000
+	Text.BorderSizePixel = 0
+	Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+	Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+	Text.Font = Enum.Font.FredokaOne
+	Text.Text = "Description"
+	Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+	Text.TextScaled = true
+	Text.TextSize = 20.000
+	Text.TextStrokeTransparency = 0.700
+	Text.TextWrapped = true
+	Text.TextXAlignment = Enum.TextXAlignment.Left
+	Text.TextYAlignment = Enum.TextYAlignment.Top
+
+	UITextSizeConstraint_4.Parent = Text
+	UITextSizeConstraint_4.MaxTextSize = 20
+
+	UIAspectRatioConstraint_3.Parent = NotificationFrame
+	UIAspectRatioConstraint_3.AspectRatio = 1.780
+
+	-- Scripts:
+
+	local function UDJVA_fake_script() -- MainFrame.Main 
+		local script = Instance.new('LocalScript', MainFrame)
+
+		local MainFrame = script.Parent
+		local BackImage = MainFrame.BackImage
+		local TitleText = MainFrame.TitleText
+
+		-- Services
+		local UserInputService = game:GetService("UserInputService")
+		local TweenService = game:GetService("TweenService")
+
+		--> BackImage
+		local CtrlToTpButton = BackImage.CtrlToTpButton
+		local AdminButton = BackImage.AdminButton
+		local RejoinButton = BackImage.RejoinButton
+		local LeaveButton = BackImage.LeaveButton
+
+		-- Bools
+		local CanCtrlToTP = false
+		local CtrlHolded = false
+		local FrameOpen = false
+		local AdminLaunched = false
+		local NotificationCounts = -1
+
+		-- Notification
+		local function Notification (title, text, duration)
+			coroutine.resume(coroutine.create(function()
+				NotificationCounts += 1
+				local NotificationFrame = Instance.new("ImageLabel")
+				local Title = Instance.new("TextLabel")
+				local Text = Instance.new("TextLabel")
+				local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+				local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+				NotificationFrame.Name = "NotificationFrame"
+				NotificationFrame.Parent = script.Parent.Parent
+				NotificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				NotificationFrame.BackgroundTransparency = 1.000
+				NotificationFrame.Position = UDim2.new(0.485000014, 0, 1.10000002, 0)
+				NotificationFrame.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+				NotificationFrame.Image = "rbxassetid://6953899926"
+
+				Title.Name = "Title"
+				Title.Parent = NotificationFrame
+				Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Title.BackgroundTransparency = 1.000
+				Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+				Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+				Title.Font = Enum.Font.FredokaOne
+				Title.Text = title
+				Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+				Title.TextScaled = true
+				Title.TextSize = 14.000
+				Title.TextStrokeTransparency = 0.700
+				Title.TextWrapped = true
+
+				Text.Name = "Text"
+				Text.Parent = NotificationFrame
+				Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+				Text.BackgroundTransparency = 1.000
+				Text.BorderSizePixel = 0
+				Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+				Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+				Text.Font = Enum.Font.FredokaOne
+				Text.Text = text
+				Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+				Text.TextScaled = true
+				Text.TextSize = 20.000
+				Text.TextStrokeTransparency = 0.700
+				Text.TextWrapped = true
+				Text.TextXAlignment = Enum.TextXAlignment.Left
+				Text.TextYAlignment = Enum.TextYAlignment.Top
+
+				UITextSizeConstraint.Parent = Text
+				UITextSizeConstraint.MaxTextSize = 20
+
+				UIAspectRatioConstraint.Parent = NotificationFrame
+				UIAspectRatioConstraint.AspectRatio = 1.780
+				local Pos = 0.485 + ("0."..NotificationCounts)
+				local OpenGoal = {Position = UDim2.new(Pos, 0,0.67, 0)}
+				local Open = TweenService:Create(NotificationFrame, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out,0,false,0), OpenGoal)
+				Open:Play()
+				wait(duration)
+				local CloseGoal = {Position = UDim2.new(NotificationFrame.Position.X.Scale, 0, 1.10000002, 0)}
+				local Close = TweenService:Create(NotificationFrame, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out,0,false,0), CloseGoal)
+				Close:Play()
+				NotificationCounts -= 1
+				Close.Completed:Wait()
+				NotificationFrame:Destroy()
+			end))
+		end
+
+		Notification("Bou", "Thank you for using, Bou. The script only made for Booga booga (4787629450)", 10)
+
+		-- Functions
+		MainFrame.Parent.OpenButton.MouseButton1Click:Connect(function()
+			if FrameOpen == false then
+				FrameOpen = true
+				MainFrame.Visible = true
+				Notification("Bou", "Opened", 2)
+			elseif FrameOpen == true then
+				FrameOpen = false
+				MainFrame.Visible = false
+				Notification("Bou", "Closed", 2)
+			end
+		end)
+
+		UserInputService.InputBegan:Connect(function(input, gameProcessed)
+			if not gameProcessed and CanCtrlToTP == true then
+				if input.KeyCode == Enum.KeyCode.LeftControl then
+					CtrlHolded = true
+				end; if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					if CtrlHolded == true then
+						local Mouse = game.Players.LocalPlayer:GetMouse()
+						if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+							if Mouse.Target then
+								if Mouse.Target.ClassName == "Part" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "MeshPart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "SpawnLocation" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "Seat" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "VehicleSeat" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "CornerWedgePart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "TrussPart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "WedgePart" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								elseif Mouse.Target.ClassName == "Terrain" then
+									game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = Mouse.Hit
+								end
+							end
+						end
+					end
+				end
+			end
+		end)
+
+		UserInputService.InputEnded:Connect(function(input, gameProcessed)
+			if not gameProcessed then
+				if input.KeyCode == Enum.KeyCode.LeftControl then
+					CtrlHolded = false
+				end
+			end
+		end)
+
+		-- Scripts
+		CtrlToTpButton.MouseButton1Click:Connect(function()
+			if CanCtrlToTP == false then
+				CanCtrlToTP = true
+				CtrlToTpButton.Text = "Ctrl to TP: ON"
+				Notification("Bou", "CTRL To TP : Enabled", 2)
+			elseif CanCtrlToTP == true then
+				CanCtrlToTP = false
+				CtrlHolded = false
+				CtrlToTpButton.Text = "Ctrl to TP: OFF"
+				Notification("Bou", "CTRL To TP : Disabled", 2)
+			end
+		end)
+
+		AdminButton.MouseButton1Click:Connect(function()
+			if AdminLaunched == false then
+				AdminLaunched = true
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+			elseif AdminLaunched == true then
+				Notification("WARNING", "You've already have a Admin.", 2)
+			end
+		end)
+
+		RejoinButton.MouseButton1Click:Connect(function()
+			local Player = game.Players.LocalPlayer
+			local TeleportService = game:GetService("TeleportService")
+			Notification("Server", "Rejoining...", 2)
+			wait(2.5)
+			TeleportService:Teleport(game.PlaceId, Player, nil, script.Parent.Parent)
+			Player:Kick("Rejoining... (If you didnt rejoin then press Leave.)")
+		end)
+
+		LeaveButton.MouseButton1Click:Connect(function()
+			local Player = game.Players.LocalPlayer
+			Player:Kick("Press Leave, to Leave the game.")
+		end)
+
+	end
+	coroutine.wrap(UDJVA_fake_script)()
+end
+if game.PlaceId ~= 4787629450 then
+	local TweenService = game:GetService("TweenService")
+	local function Notification (title, text, duration)
+		coroutine.resume(coroutine.create(function()
+			local NotificationUI = Instance.new("ScreenGui")
+			local NotificationFrameWithButtons = Instance.new("ImageLabel")
+			local Title = Instance.new("TextLabel")
+			local Text = Instance.new("TextLabel")
+			local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+			local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+			local No = Instance.new("TextButton")
+			local UICorner = Instance.new("UICorner")
+			local Yes = Instance.new("TextButton")
+			local UICorner_2 = Instance.new("UICorner")
+
+			NotificationUI.Name = "NotificationUI"
+			NotificationUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+			NotificationUI.Enabled = true
+			NotificationUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+			NotificationFrameWithButtons.Name = "NotificationFrameWithButtons"
+			NotificationFrameWithButtons.Parent = NotificationUI
+			NotificationFrameWithButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			NotificationFrameWithButtons.BackgroundTransparency = 1.000
+			NotificationFrameWithButtons.Visible = true
+			NotificationFrameWithButtons.Position = UDim2.new(0.426, 0,0.46, 0)
+			NotificationFrameWithButtons.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+			NotificationFrameWithButtons.Image = "rbxassetid://6953899926"
+
+			Title.Name = "Title"
+			Title.Parent = NotificationFrameWithButtons
+			Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Title.BackgroundTransparency = 1.000
+			Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+			Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+			Title.Font = Enum.Font.FredokaOne
+			Title.Text = title
+			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.TextScaled = true
+			Title.TextSize = 14.000
+			Title.TextStrokeTransparency = 0.700
+			Title.TextWrapped = true
+
+			Text.Name = "Text"
+			Text.Parent = NotificationFrameWithButtons
+			Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+			Text.BackgroundTransparency = 1.000
+			Text.BorderSizePixel = 0
+			Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+			Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+			Text.Font = Enum.Font.FredokaOne
+			Text.Text = text
+			Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+			Text.TextScaled = true
+			Text.TextSize = 20.000
+			Text.TextStrokeTransparency = 0.700
+			Text.TextWrapped = true
+			Text.TextXAlignment = Enum.TextXAlignment.Left
+			Text.TextYAlignment = Enum.TextYAlignment.Top
+
+			UITextSizeConstraint.Parent = Text
+			UITextSizeConstraint.MaxTextSize = 20
+
+			UIAspectRatioConstraint.Parent = NotificationFrameWithButtons
+			UIAspectRatioConstraint.AspectRatio = 1.780
+
+			No.Name = "No"
+			No.Parent = NotificationFrameWithButtons
+			No.BackgroundColor3 = Color3.fromRGB(211, 76, 76)
+			No.Position = UDim2.new(0.061797753, 0, 1.0999999, 0)
+			No.Size = UDim2.new(0.370786518, 0, 0.249999985, 0)
+			No.Font = Enum.Font.FredokaOne
+			No.Text = "No"
+			No.TextColor3 = Color3.fromRGB(255, 255, 255)
+			No.TextScaled = true
+			No.TextSize = 14.000
+			No.TextWrapped = true
+
+			UICorner.Parent = No
+
+			Yes.Name = "Yes"
+			Yes.Parent = NotificationFrameWithButtons
+			Yes.BackgroundColor3 = Color3.fromRGB(79, 211, 77)
+			Yes.Position = UDim2.new(0.561797738, 0, 1.0999999, 0)
+			Yes.Size = UDim2.new(0.370786518, 0, 0.249999985, 0)
+			Yes.Font = Enum.Font.FredokaOne
+			Yes.Text = "Yes"
+			Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Yes.TextScaled = true
+			Yes.TextSize = 14.000
+			Yes.TextWrapped = true
+
+			UICorner_2.Parent = Yes
+
+			No.MouseButton1Click:Connect(function()
+				NotificationUI:Destroy()
+			end)
+
+			Yes.MouseButton1Click:Connect(function()
+				local Player = game.Players.LocalPlayer
+				local TeleportService = game:GetService("TeleportService")
+				BouV1ForJoining()
+				wait(1)
+				TeleportService:Teleport(4787629450, Player, nil, script["Bou V1"])
+				Player:Kick("Moving to Booga booga. Please Wait... (If you didn't get teleported, just press Leave button below.)")
+			end)
+
+		end))
+	end
+	Notification("Bou", "We been noticed that you are not in, Booga booga. Would you like to Teleport?", 10)
+elseif game.PlaceId == 4787629450 then
+	BouV1()
+end

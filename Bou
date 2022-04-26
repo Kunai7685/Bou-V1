@@ -1,0 +1,114 @@
+local function BouV1()
+	loadstring(game:HttpGet('https://pastebin.com/raw/HYKqgdjV'))()
+end
+if game.PlaceId ~= 4787629450 then
+	local TweenService = game:GetService("TweenService")
+	local function Notification (title, text, duration)
+		coroutine.resume(coroutine.create(function()
+			local NotificationUI = Instance.new("ScreenGui")
+			local NotificationFrameWithButtons = Instance.new("ImageLabel")
+			local Title = Instance.new("TextLabel")
+			local Text = Instance.new("TextLabel")
+			local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+			local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+			local No = Instance.new("TextButton")
+			local UICorner = Instance.new("UICorner")
+			local Yes = Instance.new("TextButton")
+			local UICorner_2 = Instance.new("UICorner")
+
+			NotificationUI.Name = "NotificationUI"
+			NotificationUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+			NotificationUI.Enabled = true
+			NotificationUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+			NotificationFrameWithButtons.Name = "NotificationFrameWithButtons"
+			NotificationFrameWithButtons.Parent = NotificationUI
+			NotificationFrameWithButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			NotificationFrameWithButtons.BackgroundTransparency = 1.000
+			NotificationFrameWithButtons.Visible = true
+			NotificationFrameWithButtons.Position = UDim2.new(0.426, 0,0.46, 0)
+			NotificationFrameWithButtons.Size = UDim2.new(0.152136758, 0, 0.168350175, 0)
+			NotificationFrameWithButtons.Image = "rbxassetid://6953899926"
+
+			Title.Name = "Title"
+			Title.Parent = NotificationFrameWithButtons
+			Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Title.BackgroundTransparency = 1.000
+			Title.Position = UDim2.new(0.0337078646, 0, 0.0599999949, 0)
+			Title.Size = UDim2.new(0.898876429, 0, 0.279999971, 0)
+			Title.Font = Enum.Font.FredokaOne
+			Title.Text = title
+			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.TextScaled = true
+			Title.TextSize = 14.000
+			Title.TextStrokeTransparency = 0.700
+			Title.TextWrapped = true
+
+			Text.Name = "Text"
+			Text.Parent = NotificationFrameWithButtons
+			Text.BackgroundColor3 = Color3.fromRGB(140, 105, 55)
+			Text.BackgroundTransparency = 1.000
+			Text.BorderSizePixel = 0
+			Text.Position = UDim2.new(0.0542424247, 0, 0.339999974, 0)
+			Text.Size = UDim2.new(0.878341854, 0, 0.559999943, 0)
+			Text.Font = Enum.Font.FredokaOne
+			Text.Text = text
+			Text.TextColor3 = Color3.fromRGB(208, 208, 208)
+			Text.TextScaled = true
+			Text.TextSize = 20.000
+			Text.TextStrokeTransparency = 0.700
+			Text.TextWrapped = true
+			Text.TextXAlignment = Enum.TextXAlignment.Left
+			Text.TextYAlignment = Enum.TextYAlignment.Top
+
+			UITextSizeConstraint.Parent = Text
+			UITextSizeConstraint.MaxTextSize = 20
+
+			UIAspectRatioConstraint.Parent = NotificationFrameWithButtons
+			UIAspectRatioConstraint.AspectRatio = 1.780
+
+			No.Name = "No"
+			No.Parent = NotificationFrameWithButtons
+			No.BackgroundColor3 = Color3.fromRGB(211, 76, 76)
+			No.Position = UDim2.new(0.061797753, 0, 1.0999999, 0)
+			No.Size = UDim2.new(0.370786518, 0, 0.249999985, 0)
+			No.Font = Enum.Font.FredokaOne
+			No.Text = "No"
+			No.TextColor3 = Color3.fromRGB(255, 255, 255)
+			No.TextScaled = true
+			No.TextSize = 14.000
+			No.TextWrapped = true
+
+			UICorner.Parent = No
+
+			Yes.Name = "Yes"
+			Yes.Parent = NotificationFrameWithButtons
+			Yes.BackgroundColor3 = Color3.fromRGB(79, 211, 77)
+			Yes.Position = UDim2.new(0.561797738, 0, 1.0999999, 0)
+			Yes.Size = UDim2.new(0.370786518, 0, 0.249999985, 0)
+			Yes.Font = Enum.Font.FredokaOne
+			Yes.Text = "Yes"
+			Yes.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Yes.TextScaled = true
+			Yes.TextSize = 14.000
+			Yes.TextWrapped = true
+
+			UICorner_2.Parent = Yes
+
+			No.MouseButton1Click:Connect(function()
+				NotificationUI:Destroy()
+			end)
+
+			Yes.MouseButton1Click:Connect(function()
+				local Player = game.Players.LocalPlayer
+				local TeleportService = game:GetService("TeleportService")
+				TeleportService:Teleport(4787629450, Player, nil, script:WaitForChild("ScreenGui"))
+				Player:Kick("Moving to Booga booga. Please Wait... (If you didn't get teleported, just press Leave button below.)")
+			end)
+
+		end))
+	end
+	Notification("Bou", "We been noticed that you are not in, Booga booga. Would you like to Teleport?", 10)
+elseif game.PlaceId == 4787629450 then
+	BouV1()
+end
